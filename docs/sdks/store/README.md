@@ -88,7 +88,6 @@ For valid response try integer IDs with value >= 1 and <= 10.\ \ Other values wi
 ```typescript
 import { PetStore2 } from "PetStore2";
 import { GetOrderByIdResponse } from "PetStore2/dist/sdk/models/operations";
-import { OrderStatus } from "PetStore2/dist/sdk/models/shared";
 
 const sdk = new PetStore2();
 

@@ -201,7 +201,6 @@ Muliple tags can be provided with comma separated strings. Use\ \ tag1, tag2, ta
 ```typescript
 import { PetStore2 } from "PetStore2";
 import { FindPetsByTagsResponse } from "PetStore2/dist/sdk/models/operations";
-import { PetStatus } from "PetStore2/dist/sdk/models/shared";
 
 const sdk = new PetStore2();
 
@@ -242,7 +241,6 @@ Returns a single pet
 ```typescript
 import { PetStore2 } from "PetStore2";
 import { GetPetByIdResponse } from "PetStore2/dist/sdk/models/operations";
-import { PetStatus } from "PetStore2/dist/sdk/models/shared";
 
 const sdk = new PetStore2();
 
