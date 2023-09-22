@@ -21,10 +21,14 @@ For valid response try integer IDs with positive integer value.\ \ Negative or n
 import { PetStore2 } from "PetStore2";
 import { DeleteOrderResponse } from "PetStore2/dist/sdk/models/operations";
 
-const sdk = new PetStore2();
+const sdk = new PetStore2({
+  security: {
+    petstoreAuth: "",
+  },
+});
 
 sdk.store.deleteOrder({
-  orderId: 736918,
+  orderId: 449950,
 }).then((res: DeleteOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -90,10 +94,14 @@ For valid response try integer IDs with value >= 1 and <= 10.\ \ Other values wi
 import { PetStore2 } from "PetStore2";
 import { GetOrderByIdResponse } from "PetStore2/dist/sdk/models/operations";
 
-const sdk = new PetStore2();
+const sdk = new PetStore2({
+  security: {
+    petstoreAuth: "",
+  },
+});
 
 sdk.store.getOrderById({
-  orderId: 456150,
+  orderId: 359508,
 }).then((res: GetOrderByIdResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -125,15 +133,19 @@ import { PetStore2 } from "PetStore2";
 import { PlaceOrderResponse } from "PetStore2/dist/sdk/models/operations";
 import { OrderStatus } from "PetStore2/dist/sdk/models/shared";
 
-const sdk = new PetStore2();
+const sdk = new PetStore2({
+  security: {
+    petstoreAuth: "",
+  },
+});
 
 sdk.store.placeOrder({
   complete: false,
-  id: 216550,
-  petId: 568434,
-  quantity: 135218,
-  shipDate: new Date("2022-09-04T16:31:28.618Z"),
-  status: OrderStatus.Approved,
+  id: 613064,
+  petId: 437032,
+  quantity: 902349,
+  shipDate: new Date("2022-10-20T12:36:28.767Z"),
+  status: OrderStatus.Placed,
 }).then((res: PlaceOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response

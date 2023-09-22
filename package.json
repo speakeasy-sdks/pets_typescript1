@@ -1,6 +1,6 @@
 {
   "name": "PetStore2",
-  "version": "1.11.4",
+  "version": "1.12.0",
   "author": "Test",
   "scripts": {
     "prepare": "tsc --build"

@@ -5,11 +5,6 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { AxiosResponse } from "axios";
 
-export class FindPetsByStatusSecurity extends SpeakeasyBase {
-    @SpeakeasyMetadata({ data: "security, scheme=true;type=oauth2;name=Authorization" })
-    petstoreAuth: string;
-}
-
 export class FindPetsByStatusRequest extends SpeakeasyBase {
     /**
      * Status values that need to be considered for filter
