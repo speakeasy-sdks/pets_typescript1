@@ -41,7 +41,7 @@ import { PetStatus } from "PetStore2/dist/sdk/models/shared";
     category: {},
     name: "doggie",
     photoUrls: [
-      "male",
+      "string",
     ],
     tags: [
       {},
@@ -161,7 +161,7 @@ import { PetStore2 } from "PetStore2";
   });
 
   const res = await sdk.pet.findPetsByStatus({
-    status: "although Fountain Northeast",
+    status: "string",
   });
 
   if (res.statusCode == 200) {
@@ -203,7 +203,7 @@ import { PetStore2 } from "PetStore2";
 
   const res = await sdk.pet.findPetsByTags({
     tags: [
-      "engage",
+      "string",
     ],
   });
 
@@ -327,7 +327,7 @@ import { PetStatus } from "PetStore2/dist/sdk/models/shared";
     category: {},
     name: "doggie",
     photoUrls: [
-      "engage",
+      "string",
     ],
     tags: [
       {},
