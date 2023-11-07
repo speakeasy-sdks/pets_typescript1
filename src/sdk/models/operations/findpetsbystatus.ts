@@ -15,6 +15,18 @@ export class FindPetsByStatusRequest extends SpeakeasyBase {
 
 export class FindPetsByStatusResponse extends SpeakeasyBase {
     /**
+     * successful operation
+     */
+    @SpeakeasyMetadata()
+    twoHundredApplicationJsonRes?: string;
+
+    /**
+     * successful operation
+     */
+    @SpeakeasyMetadata()
+    twoHundredApplicationXmlRes?: string;
+
+    /**
      * HTTP response content type for this operation
      */
     @SpeakeasyMetadata()
@@ -31,16 +43,4 @@ export class FindPetsByStatusResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
-
-    /**
-     * successful operation
-     */
-    @SpeakeasyMetadata()
-    findPetsByStatus200ApplicationJSONString?: string;
-
-    /**
-     * successful operation
-     */
-    @SpeakeasyMetadata()
-    findPetsByStatus200ApplicationXMLString?: string;
 }

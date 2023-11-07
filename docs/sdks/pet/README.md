@@ -1,5 +1,5 @@
 # Pet
-(*pet*)
+(*.pet*)
 
 ## Overview
 
@@ -81,7 +81,7 @@ import { PetStatus } from "PetStore2/dist/sdk/models/shared";
     petstoreAuth: "",
   });
 
-  const res = await sdk.pet.addPetRaw("W`6wC8ntZ\" as bytes <<<>>>);
+  const res = await sdk.pet.addPetRaw(new TextEncoder().encode("0xcf5E85CDde"));
 
 
   if (res.statusCode == 200) {
@@ -360,7 +360,7 @@ import { PetStatus } from "PetStore2/dist/sdk/models/shared";
     petstoreAuth: "",
   });
 
-  const res = await sdk.pet.updatePetRaw(":Pnf><u_<@" as bytes <<<>>>);
+  const res = await sdk.pet.updatePetRaw(new TextEncoder().encode("0x6bCA76De67"));
 
 
   if (res.statusCode == 200) {
@@ -397,7 +397,7 @@ import { PetStore2 } from "PetStore2";
   });
 
   const res = await sdk.pet.uploadFile({
-    requestBody: "U?WWKB{5@q" as bytes <<<>>>,
+    requestBody: new TextEncoder().encode("0xc7cca7F47D"),
     petId: 621158,
   });
 
