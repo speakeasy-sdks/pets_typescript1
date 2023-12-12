@@ -21,9 +21,9 @@ For valid response try integer IDs with positive integer value.\ \ Negative or n
 ```typescript
 import { PetStore2 } from "PetStore2";
 
-(async() => {
+async function run() {
   const sdk = new PetStore2({
-    petstoreAuth: "",
+    petstoreAuth: "Bearer <YOUR_ACCESS_TOKEN_HERE>",
   });
 
   const res = await sdk.store.deleteOrder({
@@ -33,7 +33,9 @@ import { PetStore2 } from "PetStore2";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -63,16 +65,18 @@ Returns a map of status codes to quantities
 import { PetStore2 } from "PetStore2";
 import { GetInventorySecurity } from "PetStore2/dist/sdk/models/operations";
 
-(async() => {
+async function run() {
   const sdk = new PetStore2();
-const operationSecurity: GetInventorySecurity = "";
+const operationSecurity: GetInventorySecurity = "<YOUR_API_KEY_HERE>";
 
   const res = await sdk.store.getInventory(operationSecurity);
 
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -101,9 +105,9 @@ For valid response try integer IDs with value >= 1 and <= 10.\ \ Other values wi
 ```typescript
 import { PetStore2 } from "PetStore2";
 
-(async() => {
+async function run() {
   const sdk = new PetStore2({
-    petstoreAuth: "",
+    petstoreAuth: "Bearer <YOUR_ACCESS_TOKEN_HERE>",
   });
 
   const res = await sdk.store.getOrderById({
@@ -113,7 +117,9 @@ import { PetStore2 } from "PetStore2";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -143,9 +149,9 @@ Place an order for a pet
 import { PetStore2 } from "PetStore2";
 import { Status } from "PetStore2/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new PetStore2({
-    petstoreAuth: "",
+    petstoreAuth: "Bearer <YOUR_ACCESS_TOKEN_HERE>",
   });
 
   const res = await sdk.store.placeOrder({});
@@ -153,7 +159,9 @@ import { Status } from "PetStore2/dist/sdk/models/shared";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
