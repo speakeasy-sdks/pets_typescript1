@@ -4,16 +4,16 @@ management:
   docChecksum: 1ea48e084216e32de843c47307b66950
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 0.3.1
-  configChecksum: accfb13905c4f7328ec4d4b1f1a56924
+  generationVersion: 2.258.2
+  releaseVersion: 0.3.2
+  configChecksum: 40574cdfd5c636bcd2df482b84a15ed1
   repoURL: https://github.com/speakeasy-sdks/pets_typescript1.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/pets_typescript1
 features:
   typescript:
     acceptHeaders: 2.81.1
-    core: 3.4.1
+    core: 3.4.7
     deprecations: 2.81.1
     globalSecurity: 2.82.2
     globalServerURLs: 2.82.1

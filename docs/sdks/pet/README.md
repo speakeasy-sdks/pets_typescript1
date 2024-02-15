@@ -39,7 +39,7 @@ async function run() {
     category: {},
     name: "doggie",
     photoUrls: [
-      "string",
+      "<value>",
     ],
     tags: [
       {},
@@ -171,7 +171,7 @@ async function run() {
   });
 
   const res = await sdk.pet.findPetsByStatus({
-    status: "string",
+    status: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -217,7 +217,7 @@ async function run() {
 
   const res = await sdk.pet.findPetsByTags({
     tags: [
-      "string",
+      "<value>",
     ],
   });
 
@@ -353,7 +353,7 @@ async function run() {
     category: {},
     name: "doggie",
     photoUrls: [
-      "string",
+      "<value>",
     ],
     tags: [
       {},
